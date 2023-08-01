@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="PLMPI_base.xsl"?>
+<?xml-stylesheet href="PLMPI_base.css"?>
+<!--<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<?xml-model href="./PLMPI_v01.xsd" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Colophon of <foreign xml:lang="san-Latn">Pauṣkarāgama</foreign> and other texts
+            </title>
+            <author xml:id="gici">
+               <name>Giovanni</name>
+               <surname>Ciotti</surname>
+            </author>
+            <author xml:id="mafr">
+               <name>Marco</name>
+               <surname>Franceschini</surname></author>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Palm-Leaf Manuscript Profiling Initiative (PLMPI)</authority>
+            <pubPlace>Hamburg (Germany) and Pondicherry (India)</pubPlace>
+            <idno type="filename">RE_10866β</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported
+                     Licence. To view a copy of the licence, visit
+                     https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative
+                     Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041,
+                     USA.</p>
+                  <!--     to be filled in with correct info    <p>Copyright © </p> -->
+               </licence>
+            </availability>
+            <!--  to be filled in with correct info  <date from="2020" to="2025">2020-2025</date>-->
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement>Pondicherry, India </settlement>
+                  <repository>Institut Français de Pondichéry (IFP)</repository>
+                  <idno>RE_10866β</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>Manuscript of the <foreign xml:lang="san-Latn"
+                     >Pauṣkarāgama</foreign> and other texts</summary>
+               </msContents>
+               <physDesc>
+                  <p> The metre of the verse is <foreign xml:lang="san-Latn">mandākrāntā</foreign>.
+                     Perhaps a word play on <foreign xml:lang="san-Latn">bha</foreign>, “splendour”
+                     and “constellation”: “in the Śrāvaṇa constellation/in the splendour of Viṣṇu,
+                     that is the same as his own Sarvādvaita doctrine, Śrīnivāsa [...] copied here
+                     the manuscript of the <foreign xml:lang="san-Latn">ṛcas</foreign>”. </p>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <!--      example from the DHARMA template for regex to retrive external links such as those for the authority lists of  names, dates, etc.-->
+            <p>The project DHARMA has received funding from the European Research Council (ERC)
+               under the European Union’s Horizon 2020 research and innovation programme (grant
+               agreement no 809994).</p>
+         </projectDesc>
+         <schemaRef type="guide" key="PLMPI_template" url="to_be_filled_in_later"/>
+         <!-- UPDATE the link once the release is made official -->
+         <listPrefixDef>
+            <!--          <prefixDef ident="date" matchPattern="([a-zA-Z0-9]+)" replacementPattern="to_be_filled_in_later">
+              <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open
+                 to the public.</p>
+           </prefixDef>-->
+            <prefixDef ident="pers" matchPattern="([a-zA-Z]+)"
+               replacementPattern="placeNames.xml#$1">
+               <p>Internal URIs using the part prefix to point to person elements in the
+                     <ref>placeNames</ref> file.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+   </teiHeader>
+   <facsimile>
+      <surface xml:id="t">
+         <graphic url="../Figures/Symbols/t%C2%B0.pdf"/>
+      </surface>
+      <surface xml:id="m">
+         <graphic url="../figures/symbols/m%C2%B0.pdf"/>
+      </surface>
+      <surface xml:id="yj1a" corresp="cal:jovian">
+         <graphic url="../figures/symbols/yj1a.pdf"/>
+      </surface>
+      <surface xml:id="yk1a" corresp="cal:kollam">
+         <graphic url="../figures/symbols/yk1a.pdf"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="colophon" xml:lang="tam-Latn">
+          <head>Edition</head>
+            <pb n="GL" facs="to-be-filled"/>
+            <ab>
+               <milestone unit="section" type="date"/>
+               <date notBefore="1865-08-15"  notAfter="1869-10-23" type="ciclical"/>
+               <seg type="date-y" subtype="v-mk"><lb type="prose" n="r6col3"/> piṟacoṟpatti <g facs="#yk1a">YJ1a</g>m</seg> – 
+               <seg type="date-m" subtype="v-mk">māci <g  facs="#m">m°</g></seg>
+               <seg type="date-md" subtype="v-mk" n="digit-c"> <lb type="prose" n="r7col3"/> 5 <supplied resp="#mafr"><g facs="#t"
+                     >t°</g></supplied> </seg>  
+               <seg type="borForm"  subtype="o">mēlteru  <persName ref="pers:to-be-filled" role="owner">tēṉāmuttayā<lb type="prose" n="r8col3"/>piḷḷai</persName>
+                  <rs ref="pers:to-be-filled">vayittiliṅka paṇṭārattiṉiṭattil</rs> <lb type="prose" n="r9col3"/>  <seg type="title" subtype="v"><name type="title" ref="to-be-filled">vētāraṇiya<hi rend="grantha">stala</hi>purāṇam</name></seg>
+                  eraval ā<lb type="prose" n="r10col3"/>y kuṭuttiruttatu – vāṅka vēṇṭiyatu </seg></ab>
+         </div>
+         <div type="translation">
+            <head>Translation</head>
+            <p>In the Jovian year Piṟacoṟpatti, month of Māci, 5th day, Tēṉāmuttayāpiḷḷai of Western
+               street gave as a borrowing (<foreign xml:lang="tam-Latn">eraval</foreign>, colloquial for <foreign  xml:lang="tam-Latn">iraval</foreign>) the <foreign xml:lang="tam-Latn">Vētāraṇiyastalapurāṇam</foreign>
+               to Vayittiliṅkapaṇṭāram. It should be collected.</p>
+         </div>
+      </body>
+   </text>
+</TEI>

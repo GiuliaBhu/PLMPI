@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="PLMPI_base.xsl"?>
+<?xml-stylesheet href="PLMPI_base.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Colophon of <foreign xml:lang="tam-Latn">Villipāratam</foreign>
+            </title>
+            <author xml:id="gici">
+               <name>Giovanni</name>
+               <surname>Ciotti</surname>
+            </author>
+            <author xml:id="mafr">
+               <name>Marco</name>
+               <surname>Franceschini</surname></author>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Palm-Leaf Manuscript Profiling Initiative (PLMPI)</authority>
+            <pubPlace>Hamburg (Germany) and Pondicherry (India)</pubPlace>
+            <idno type="filename"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">
+                  <p>This work is licenced under the Creative Commons Attribution 4.0 Unported
+                     Licence. To view a copy of the licence, visit
+                     https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative
+                     Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041,
+                     USA.</p>
+                  <!--     to be filled in with correct info    <p>Copyright © </p> -->
+               </licence>
+            </availability>
+            <!--  to be filled in with correct info  <date from="2020" to="2025">2020-2025</date>-->
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <settlement>Paris, France</settlement>
+                  <repository>Bibliothèque nationale de France</repository>
+                  <idno>BN-INDEN 959</idno>
+               </msIdentifier>
+               <msContents>
+                  <summary>Manuscript of the <foreign xml:lang="tam-Latn"
+                     >Villipāratam</foreign>.</summary>
+               </msContents>
+               <physDesc>
+                  <p>(1) The scribe has a particular way of writing the descending stroke in
+                     syllables like a [292v6] and yu [292v5]. (2) The glyph ku in [292v7] is most
+                     probably a mistake: the scribe changed his mind and decided to write naṉṟāka
+                     (“may there be prosperity”) before the invocation to the teacher (kuru vāḻka
+                     “may the teacher thrive”). (3) Either the tithi or the nakṣatra recorded in the
+                     date are wrong. As it is, the date can correspond to three different days in
+                     the Gregorian calendar, although in all the three cases at least one
+                     calendrical element is wrong: 24 June 1712 (but the tithi was the 2nd, whereas
+                     the colophon records the 7th), 6 July 1772 (but it was a Monday and the
+                     nakṣatra was the 12th, whereas the colophon records Tuesday and 8th nakṣatra
+                     respectively), 7 July 1772 (but the day was the 27th and the nakṣatra was the
+                     13th, whereas the colophon records the 26th day and the 8th nakṣatra
+                     respectively). </p>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <!--      example from the DHARMA template for regex to retrive external links such as those for the authority lists of  names, dates, etc.-->
+            <p>The project DHARMA has received funding from the European Research Council (ERC)
+               under the European Union’s Horizon 2020 research and innovation programme (grant
+               agreement no 809994).</p>
+         </projectDesc>
+
+         <schemaRef type="guide" key="PLMPI_template" url="to_be_filled_in_later"/>
+         <!-- UPDATE the link once the release is made official -->
+         <listPrefixDef>
+            <!--          <prefixDef ident="date" matchPattern="([a-zA-Z0-9]+)" replacementPattern="to_be_filled_in_later">
+              <p>Public URIs with the prefix bib to point to a Zotero Group Library named ERC-DHARMA whose data are open
+                 to the public.</p>
+           </prefixDef>-->
+            <prefixDef ident="pers" matchPattern="([a-zA-Z]+)"
+               replacementPattern="placeNames.xml#$1">
+               <p>Internal URIs using the part prefix to point to person elements in the
+                     <ref>placeNames</ref> file.</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+   </teiHeader>
+   <facsimile>
+      <surface xml:id="to-be-filled">
+         <graphic url="to-be-filled" />
+      </surface>
+      <surface xml:id="d2">
+         <graphic url="../figures/symbols/d2.pdf"/>
+      </surface>
+      <surface xml:id="m">
+         <graphic url="../figures/symbols/m%C2%B0.pdf"/>
+      </surface>
+      <surface xml:id="yj1a">
+         <graphic url="../figures/symbols/yj1a.pdf"/>
+      </surface>
+      <surface xml:id="mum">
+         <graphic url="../figures/symbols/mum.jpg"/>
+      </surface>
+
+
+   </facsimile>
+   <text>
+      <body>
+         <div type="scribeStmt" subtype="prose" xml:lang="tam-Latn">
+            <head>Edition</head>
+            <ab>
+               <lb type="inline" n="292v5"/>
+               <anchor type="date"/>
+               <date type="single-match" when="1712-06-24">
+                  <seg type="date-yj" subtype="v-mk">ṉantaṉa <g facs="#yj1a">YJ1a</g></seg>
+                  <seg type="date-sm" subtype="v-mk">āṉi <abbr type="abbr" facs="#m">m°</abbr></seg>
+                  <seg type="date-md" subtype="v-mk">26 <g facs="#d2">D2</g></seg>
+                  <seg type="date-t" subtype="v-mk">cattamiyu</seg><seg type="date-wd"
+                     subtype="v-mk">maṅkaḷavāra<g facs="#mum">mum</g></seg> kūṭiṉa cupatiṉattil <seg
+                     type="date-n" subtype="v-mk">pūcanaṭcettiramum</seg></date>
+               
+               <anchor type="scribe"/>
+               <seg type="pers" subtype="scribe"
+                  ><placeName>ciṅkavaṉattil</placeName> irukkum <persName role="scribe">tiyākāracaṉ</persName></seg>
+               <anchor type="item"/>
+               <seg type="copItem" subtype="title">makāparatam</seg>
+               <anchor type="copFor"/>
+               <seg type="copFor-end" subtype="eḻuti-muṟṟ">eḻuti mukintatu muṟṟum</seg> &#xBF3; <lb
+                  type="inline" n="292v6"/>
+               <anchor type="inv"/>
+               <seg type="inv">tiyākāracar tuṇai cokkaliṅkam tuṇai mīṉāṭci tuṇai cuppiṟamaṉiyar
+                  tuṇai &#xBF3; rācentiramūṟti tuṇai aṟam vaḷattavaḷ tuṇai &#xBF3; vetaṉāyaki tuṇai
+                  &#xBF3; śrīrāma jeyam &#xBF3; <lb type="inline" n="292v7"/> hari om <choice>
+                     <sic>ku</sic>
+                  </choice> naṉṟāka kuru vāḻka kuruve tuṇai keṇapatiye namā &#xBF3;</seg>
+               <anchor type="apo"/>
+               <seg type="apo" subtype="bless"> intap pāratattaip paṭitta per keṭṭa per
+                     ??maiyilakkiya<g facs="#mum">mum</g> muṭivil kayilācapataviyuñ ceruvar
+                  &#xBF3;</seg>
+            </ab>
+         </div>
+         <div type="traslation">
+            <head>Translation</head>
+            <p>On the auspicious day when the Jovian year Ṉantaṉam, the month of Āṉi, the 26th day,
+               the seventh [luna day], Monday come together – and also the constellation of Pūcam –,
+               Tiyākāracaṉ who is in Ciṅkavaṉam fully copied the Makāparatam. Tiyākāracar is the
+               support, Cokkaliṅkam is the support, Mīṉāṭci is the support, Cuppiṟamaṉiyar is the
+               support. Rācentiramūṟti is the support, Aṟam Vaḷattavaḷ [read Vaḷaittavaḷ?] is the
+               support. Vetaṉāyaki is the support. VIctory to the illustrious Rāma. Hari om, may
+               there be prosperity, may the teacher thrive, only the teacher is the support, honour
+               to Keṇapati. The person who reads, the person who listens to this Pāratam ???
+               (??mai-y-ilaakkiya⟨mum⟩) will in the end obtain even the abode of Kayilācam. The
+               lotus-like feet of Makāleṭcumi are the support.</p>
+         </div>
+         <div>
+            <head>Modular Syntax</head>
+            <div type="footer"/>
+         </div>
+      </body>
+   </text>
+</TEI>

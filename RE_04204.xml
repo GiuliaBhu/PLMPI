@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface xml:id="merpati">
+         <graphic url="../figures/symbols/merpati.PNG" width="937px" height="300px"/>
+      </surface>
+      <surface xml:id="yj1a" type="glyph_year" corresp="cal:jovian">
+         <graphic url="../figures/symbols/yj1a.pdf"/>
+      </surface>
+      <surface xml:id="m">
+         <graphic url="../figures/symbols/m%C2%B0.pdf"/>
+      </surface>
+      <surface xml:id="m2">
+         <graphic url="../figures/symbols/m2.pdf"/>
+      </surface>
+      <surface xml:id="d1">
+         <graphic url="../figures/symbols/d1.pdf"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="edition" xml:lang="tam">
+            <head>Edition</head>
+            <pb n="GL" facs="to-be-filled"/>
+            <p><lb n="3r1" type="prose"/> 
+            <milestone unit="section" type="date"/>
+               <date type="convertible" when="1889-10-29" />
+                 <seg type="date-all" xml:id="d-1" next="#d-2">   
+                    <seg type="date-y" subtype="v-mk"><seg type="date-y" subtype="digit-c" >1060</seg> <g facs="#yj1a">YK1a</g></seg> 
+                    <seg type="date-m" subtype="v-mk">aṟpici <g facs="#m2">M2</g></seg>
+                    <seg type="date-md" subtype="v-mk"><seg type="date-md" subtype="digit-c">15</seg> <g facs="#d1">D1</g></seg>  mutal <lb n="3r3" type="prose"/>
+                    <milestone unit="section" type="copFor"/>
+                    <seg type="copFor-beg" subtype="āṟampi">ārampi<orig>vi</orig>ttu</seg> <g facs="#merpati">meṟpaṭi</g></seg>               
+               <seg type="date-all" xml:id="d-2" prev="#d-1"> 
+                  <seg type="date-m" subtype="mk"><g facs="#m" type="ang-no">m°</g> 
+                  <seg type="date-md" subtype="v-mk"><seg type="date-md" subtype="digit-c">16</seg> <g facs="#d1">D1</g></seg> </seg>varai 
+                  <milestone unit="section" type="copFor"/>
+                  <seg type="copFor-end" subtype="eḻuti-muṭi">eḻuti muṭikkappaṭṭutu</seg></seg>
+                       <seg type="scribesStmt"> <lb n="3r3" type="prose"/> 
+                          <milestone unit="section" type="copItem"/>
+                          <milestone unit="section" type="owner"/>                            
+                          <seg type="owner"> <persName ref="pers000X" role="owner">pūcai civañāṉacammantam piḷḷai</persName></seg> 
+                          <seg type="word-ms" subtype="cuvaṭi">cuvaṭi</seg> &#xBF3; </seg></p>
+         </div>
+         <div type="traslation">
+            <head>Translation</head>
+            <p>
+               Having been commenced on (lit. from) the Kollam year 1060, month of Aṟpaci, 15th
+               day, 
+               it was finished to be copied on (lit. until) the 16th day of the same month.
+               The manuscript of Pūcai Civañāṉacammantam (emend into Civañāṉacampantam) Piḷḷai.” </p>
+         </div>
+      </body>
+   </text>
+</TEI>

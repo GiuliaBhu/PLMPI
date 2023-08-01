@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="PLMPI_base.xsl"?>
+<?xml-stylesheet href="PLMPI_base.css"?>
+<!--<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/erc-dharma/project-documentation/master/schema/latest/DHARMA_CritEdSchema.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>-->
+<?xml-model href="./PLMPI_v01.xsd" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface xml:id="fig_36v">
+         <graphic url="../Figures/SUB_353005/Mss/DSC00045.jpg"/>
+         <zone ulx="3032" uly="2167" lrx="5947" lry="2338" xml:id="zone_fig_36"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="colophon" xml:lang="tam-Latn">        <pb  n="247v" facs="#fig_36v"/>
+         <ab>
+          <milestone unit="section" type="inv"/>
+                <seg type="inv"><hi rend="grantha">śrīśṛṃ<lb type="prose" n="247v3"/>ṃganadeśvarāya namaḥ</hi></seg> |
+            <milestone unit="section" type="scribe"/>      <placeName>neṭuṅkāṭu</placeName> <hi rend="grantha"><persName ref="PLMPI_listPers.xml#pers3" role="father">vasantarājaguru</persName>kkaḷ prathamaputran</hi>
+       <milestone unit="section" type="copFor"/>  <seg type="copFor-end" subtype="svahastalikh">  <hi rend="grantha"><persName ref="PLMPI_listPers.xml#pers1" role="scribe">su<lb type="prose" n="247v4"/>ndareśvaran</persName> svahastalikhitaṃ</hi></seg> |
+            &#xBF3; | </ab>
+         </div> 
+      </body>
+   </text>
+</TEI>
